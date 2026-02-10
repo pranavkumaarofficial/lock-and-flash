@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>REST App Icon Showcase</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6751a4",
+                        "background-light": "#f7f6f7",
+                        "background-dark": "#17161c",
+                        "icon-bg": "#FDFCFC", // Very soft off-white/cream for the icon itself
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem", // For icon corners
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        "subtle": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom adjustment for optical alignment of the italic 'r' */
+        .icon-glyph {
+            transform: translateX(-2%); 
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col items-center justify-center font-display antialiased overflow-hidden relative">
+<!-- Decorative subtle background elements for premium feel -->
+<div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none opacity-40">
+<div class="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] rounded-full bg-primary/5 blur-[120px]"></div>
+<div class="absolute top-[40%] -right-[10%] w-[40%] h-[40%] rounded-full bg-primary/5 blur-[100px]"></div>
+</div>
+<!-- Main Content Container -->
+<main class="relative z-10 flex flex-col items-center justify-center w-full max-w-md p-8 space-y-12">
+<!-- App Icon Presentation -->
+<div class="flex flex-col items-center justify-center">
+<!-- Icon Container -->
+<!-- Using w-48 h-48 (192px) which is a standard large display size for an icon showcase -->
+<div class="group relative w-48 h-48 rounded-[22%] bg-icon-bg shadow-sm flex items-center justify-center select-none transition-transform duration-700 hover:scale-[1.02] cursor-default ring-1 ring-black/5 dark:ring-white/10">
+<!-- Icon Glyph -->
+<span class="icon-glyph text-primary text-9xl italic font-light leading-none pt-4 pr-1">
+                    r
+                </span>
+</div>
+<!-- Optional context label (extremely subtle) -->
+<div class="mt-16 text-center opacity-0 animate-[fadeIn_1s_ease-out_1s_forwards]">
+<h1 class="text-2xl italic font-medium text-primary/80 tracking-wide">rest</h1>
+<p class="mt-2 text-sm text-gray-500 dark:text-gray-400 font-normal tracking-wider uppercase text-[0.65rem]">Premium Nighttime Wellness</p>
+</div>
+</div>
+<!-- App Store Download Badge Mockup (Pure CSS representation for minimalism) -->
+<div class="absolute bottom-12 opacity-0 animate-[fadeIn_1s_ease-out_1.5s_forwards]">
+<button class="bg-primary text-white px-8 py-3 rounded-full text-lg italic hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20 flex items-center gap-2">
+<span class="not-italic text-sm font-sans tracking-wide font-medium">Get Started</span>
+</button>
+</div>
+</main>
+<style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</body></html>
