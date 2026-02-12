@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ScreenTracker</string>
+    <string name="app_name">REST</string>
     <string name="notification_channel_name">Monitoring Service</string>
     <string name="notification_channel_description">Shows when the app is monitoring screen and flashlight events</string>
-    <string name="notification_title">ScreenTracker Active</string>
+    <string name="notification_title">REST Active</string>
     <string name="notification_text">Monitoring screen and flashlight events</string>
     <string name="start_monitoring">Start Monitoring</string>
     <string name="stop_monitoring">Stop Monitoring</string>
