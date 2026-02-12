@@ -93,7 +93,7 @@ class MonitoringService : Service() {
         )
 
         return NotificationCompat.Builder(this, CHANNEL_ID)
-            .setContentTitle("ScreenTracker")
+            .setContentTitle("REST")
             .setContentText("Monitoring screen and flashlight events")
             .setSmallIcon(android.R.drawable.ic_menu_view)
             .setContentIntent(pendingIntent)
@@ -109,7 +109,7 @@ class MonitoringService : Service() {
                 "Monitoring Service",
                 NotificationManager.IMPORTANCE_LOW
             ).apply {
-                description = "Shows when ScreenTracker is monitoring events"
+                description = "Shows when REST is monitoring events"
             }
             
             val notificationManager = getSystemService(NotificationManager::class.java)
