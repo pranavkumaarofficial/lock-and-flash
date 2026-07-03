@@ -41,6 +41,14 @@ REST was built on a simple insight: clock-watching at 3 AM is one of the most co
 | **Trend tracking** | Shows "a little less than usual" instead of raw counts that induce anxiety |
 | **Session history** | Track patterns over time without leaderboards or competition |
 
+# Demo
+
+
+https://github.com/user-attachments/assets/80fa24aa-579b-4465-8015-b06728350333
+
+
+
+
 ### Core Values
 
 ```
